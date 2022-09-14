@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    background-image: url(/NLW/assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+section {
+    color: #ffffff;
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;    
+    border-radius: 10px;
+}
+
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+section h2 {
+/*font-weight: 900;*/
+font-size: 24px;
+letter-spacing: -0.47px;
+}
+
+section p {
+/*font-weight: 400;*/
+font-size: 16px;
+letter-spacing: -0.18px;
+color: #A1A1AA;
+}
+
+/*
+main * {
+    border: 1px solid red;
+}
+*/
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /*max-height: 264px;*/
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+/*Meus jogos*/
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+/*Canais streamers*/
+.channel-list img {
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
+}
