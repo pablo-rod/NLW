@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+header {
+padding-top: 32px;
+/*height: calc(120px + 32px);*/
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+    transition: transform .5s;
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+    
+header div:hover {
+    transform: scale(1.1);
+}
+
 ul {
     list-style: none;
 }
@@ -57,7 +84,7 @@ main * {
 main {
     max-width: 580px;
     width: 90%;
-    margin: 32px;
+    margin: 32px auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -73,6 +100,14 @@ ul {
     margin-top: 24px;
 }
 
+section ul li {
+transition: transform .5s;
+}
+
+section ul li:hover {
+transform: scale(1.1);
+}
+
 /*Meus jogos*/
 .games-list img {
     width: 90px;
@@ -84,4 +119,50 @@ ul {
     width: 70px;
     border-radius: 50%;
     border: 1px solid #443E54;
+}
+
+/*animation*/
+
+header div {
+    animation: fromTop .7s, .3s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
