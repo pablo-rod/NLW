@@ -6,7 +6,7 @@ Website inspirado no universo dos games. O projeto faz parte de uma maratona ide
 -CSS
 -Git e GitHub
 
-![Clique aqui para acessar](https://pablo-rod.github.io/nlw-esports-explorer)
+![Clique aqui para acessar](https://pablo-rod.github.io/nlw-esports-explorer/)
 
 ## CONTATO
 pablorodrigues606@gmail.com 
